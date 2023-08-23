@@ -1,0 +1,3 @@
+CGx test
+C:/Users/andre/Documents/exomedepth_cnv_files/baseline_bams
+C:/Users/andre/Documents/exomedepth_cnv_files/test_bams
