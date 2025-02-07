@@ -2,7 +2,7 @@
 
 **Version:** 1.0.0
 
-The PG Exome Depth Tool provides a graphical interface to facilitate exome depth analysis. This tool guides you through naming your analysis, selecting the folders containing your reference and test BAM files, and then executes an R script to perform the analysis. The results, including copy number variation (CNV) data, are saved for your review.
+The PG Exome Depth Tool wraps a python graphical interface to call copy-number variations (CNV) from exome-based sequencing data using [Exome Depth](https://github.com/vplagnol/ExomeDepth). This tool guides you through naming your analysis, selecting the folders containing your reference and test BAM files, and then executes an R script to perform the analysis. 
 
 ---
 
@@ -22,9 +22,9 @@ The PG Exome Depth Tool provides a graphical interface to facilitate exome depth
 
 ## Features
 
-- **User-Friendly GUI:** Built with Tkinter, the tool provides simple dialogs to collect user inputs.
-- **Logging:** Execution details (including username and timestamp) are automatically logged.
-- **R Integration:** Calls an R script to run the core analysis, ensuring robust statistical computation.
+- **User-Friendly GUI:** Built with Tkinter, the GUI provides simple dialogs to collect user inputs.
+- **Logging:** Execution details (including username and timestamp) are automatically logged for regulatory compliance.
+- **R Integration:** Calls the Exome Depth R script to run the core analysis.
 - **Interactive Workflow:** Guides the user through:
   - Naming the analysis.
   - Selecting the reference folder (with BAM files having an average copy number of 2).
@@ -37,10 +37,9 @@ The PG Exome Depth Tool provides a graphical interface to facilitate exome depth
 
 - **Python 3.6+**
 - **R:** Must be installed and available on your system’s PATH.
-- **Python Libraries:**
+- **Non-standard Python Libraries:**
   - `tkinter` (usually included with Python)
   - [`Pillow`](https://python-pillow.org/) (for image handling)
-  - Standard libraries: `subprocess`, `logging`, `getpass`, `datetime`, `sys`
 - **Operating System:** Windows is recommended, given the use of `RScript.exe`.
 
 ---
@@ -50,7 +49,7 @@ The PG Exome Depth Tool provides a graphical interface to facilitate exome depth
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/yourusername/pg-exomedepth-tool.git
+    git clone [https://github.com/yourusername/pg-exomedepth-tool.git](https://github.com/vplagnol/ExomeDepth.git)
     cd pg-exomedepth-tool
     ```
 
